@@ -48,7 +48,11 @@ double pow(double a, unsigned int b)
 
 int main()
 {
-	double a = 5, b = 3;
+	double a, b ;
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
 	cout << "a + b = " << sum(a, b) << endl;
 	cout << "a - b = " << sub(a, b) << endl;
 	if (b = !0)
