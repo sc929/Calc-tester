@@ -8,7 +8,7 @@ double sub(double a, int b)
 	return a - b;
 }
 
-double div(double a, int b)
+double *div(double a, int b)
 {
 	if (b != 0)
 	{
@@ -25,7 +25,7 @@ double mult(double a, int b)
 	return a * b;
 }
 
-double squar(double a)
+double *squar(double a)
 {
 	double *r=new double;
 	if (a < 0)
