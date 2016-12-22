@@ -33,7 +33,7 @@ double *squar(double a)
 	while (c - res > 0.00001 || c - res < -0.00001)
 	{
 		c = res;
-		res = (c + a / *res) / 2;
+		res = (c + a / res) / 2;
 	}
 	*r = res;
 	return r;
