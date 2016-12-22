@@ -48,7 +48,7 @@ double pow(double a, int b)
 			res = res * a;
 		}
 	else
-		if (b = 0)
+		if (b == 0)
 			return 1;
 		else
 			for (; b < 0; b++)
