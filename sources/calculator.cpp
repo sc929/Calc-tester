@@ -13,7 +13,7 @@ double div(double a, int b)
 	if (b != 0)
 		return a / b;
 	else
-		return NULL;
+		return nullptr;
 }
 
 double mult(double a, int b)
@@ -24,7 +24,7 @@ double mult(double a, int b)
 double squar(double a)
 {
 	if (a < 0)
-		return NULL;
+		return nullptr;
 	double c = 0, res;
 	res = a;
 	while (c - res > 0.00001 || c - res < -0.00001)
