@@ -75,3 +75,4 @@ SCENARIO("calculator squar", "[squar]") {
 	*rv = squar( a);
 
 	REQUIRE(rv == nullptr);
+}
