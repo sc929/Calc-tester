@@ -10,9 +10,9 @@ double sub(double a, int b)
 
 double *div(double a, int b)
 {
-	double *d=new double;
 	if (b != 0)
 	{
+		double *d=new double;
 		*d = (float)a/b;
 		return d;
 	}
