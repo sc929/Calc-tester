@@ -26,7 +26,7 @@ SCENARIO("calculator mult", "[mult]") {
 	REQUIRE( rv == 9.0 );
 }
 
-SCENARIO("calculator *div", "[*div]") {
+SCENARIO("calculator div", "[div]") {
 	double a = 9.0;
 	int b = 0;
 
