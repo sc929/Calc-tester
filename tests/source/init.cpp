@@ -30,7 +30,7 @@ SCENARIO("calculator div", "[div]") {
 	double a = 9.0;
 	int b = 0;
 
-	double *rv = div( a, b );
+	double rv = div( a, b );
 
 	REQUIRE(rv == nullptr);
 }
@@ -45,7 +45,7 @@ SCENARIO("calculator pow", "[pow]") {
 SCENARIO("calculator squar", "[squar]") {
 	double a = -9.0;
 
-	double *rv = squar( a);
+	double rv = squar( a);
 
 	REQUIRE(rv == nullptr);
 }
