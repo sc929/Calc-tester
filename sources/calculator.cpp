@@ -12,10 +12,12 @@ double *div(double a, int b)
 {
 	double *d=new double;
 	if (b != 0)
+	{
 		*d = (float)a/b;
+		return d;
+	}
 	else
 		return nullptr;
-	return d;
 }
 
 double mult(double a, int b)
