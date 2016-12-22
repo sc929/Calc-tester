@@ -25,31 +25,6 @@ SCENARIO("calculator mult", "[mult]") {
     
 	REQUIRE( rv == 9.0 );
 }
-SCENARIO("calculator div", "[div]") {
-	double a = 9.0;
-	int b = 1;
-    
-    double *rv = new double;
-	*rv = div( a, b );
-    
-	REQUIRE( *rv == 9.0 );
-}
-SCENARIO("calculator pow", "[pow]") {
-	double a = 9.0;
-	int b = 1;
-    
-    double rv = pow( a, b );
-    
-	REQUIRE( rv == 9.0 );
-}
-SCENARIO("calculator squar", "[squar]") {
-	double a = 9.0;
-    
-    double *rv = new double;
-	*rv = squar( a);
-    
-	REQUIRE( *rv == 3.0 );
-}
 
 SCENARIO("calculator div", "[div]") {
 	double a = 9.0;
