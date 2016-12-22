@@ -29,7 +29,8 @@ SCENARIO("calculator div", "[div]") {
 	double a = 9.0;
 	int b = 1;
     
-    double *rv = div( a, b );
+    double *rv = new double;
+	rv = div( a, b );
     
 	REQUIRE( *rv == 9.0 );
 }
@@ -44,7 +45,8 @@ SCENARIO("calculator pow", "[pow]") {
 SCENARIO("calculator squar", "[squar]") {
 	double a = 9.0;
     
-    double *rv = squar( a);
+    double *rv = new double;
+	rv = squar( a);
     
 	REQUIRE( *rv == 3.0 );
 }
@@ -53,7 +55,8 @@ SCENARIO("calculator div", "[div]") {
 	double a = 9.0;
 	int b = 0;
 
-	double *rv = div(a, b);
+	double *rv = new double;
+	rv = div( a, b );
 
 	REQUIRE(rv == nullptr);
 }
@@ -68,6 +71,7 @@ SCENARIO("calculator pow", "[pow]") {
 SCENARIO("calculator squar", "[squar]") {
 	double a = -9.0;
 
-	double *rv = squar(a);
+	double *rv = new double;
+	rv = squar( a);
 
 	REQUIRE(rv == nullptr);
