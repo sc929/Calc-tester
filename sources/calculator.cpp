@@ -10,10 +10,12 @@ double sub(double a, int b)
 
 double *div(double a, int b)
 {
+	double *d=new double;
 	if (b != 0)
-		return a / b;
+		*d = a / b;
 	else
 		return nullptr;
+	return d;
 }
 
 double mult(double a, int b)
@@ -23,14 +25,15 @@ double mult(double a, int b)
 
 double *squar(double a)
 {
+	double *res=new double;
 	if (a < 0)
 		return nullptr;
-	double c = 0, res;
-	res = a;
-	while (c - res > 0.00001 || c - res < -0.00001)
+	double c = 0;
+	*res = a;
+	while (c - *res > 0.00001 || c - *res < -0.00001)
 	{
-		c = res;
-		res = (c + a / res) / 2;
+		c = *res;
+		*res = (c + a / res) / 2;
 	}
 	return res;
 }
